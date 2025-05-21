@@ -4,22 +4,30 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+#navbar h3{
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: medium;
+}
 html,body{
     height: 100%;
     width: 100%;
 }
-#box1{
-    width: 300px;
-    height: 200px;
-    background-color: red;
-}
-#box2{
-    width: 300px;
-    height: 200px;
+#main{
     background-color: black;
+        height: 100%;
+    width: 100%;
 }
-#box3{
-    width: 300px;
-    height: 200px;
-    background-color: blue;
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 50px;
+    height: 50px
+}
+#navbar-pt2{
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
