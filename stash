@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="main">
+<div id="navbar">
+    <h3>Francesco gioia</h3>
+    <div id="navbar-pt2">
+        <h3>Instagram</h3>
+        <h3>Gallery</h3>
+        <h3>Contact</h3>
+    </div>
+</div>
+<h1>Hello I'm</h1>
+<h1>Francesco</h1>
+<h1>Gioia</h1>
+<img id="img1" src="https://images.unsplash.com/photo-1747253590504-3a17cd5a4f9c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+<img id="img2" src="https://images.unsplash.com/photo-1747573285174-194401aa104a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+<img id="img3"  src="https://images.unsplash.com/photo-1747835369484-97d3f0f782ac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+---------CSS---------
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#navbar h3{
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: medium;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: black;
+        height: 100%;
+    width: 100%;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 50px;
+    height: 50px
+}
+#navbar-pt2{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+h1{
+    color: #ffffff;
+    font-size: 100px;
+    text-transform: uppercase; 
+    font-weight: 100;
+    line-height: 80px;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+    z-index: 9;
+    position: relative;
+}
+#main h1:nth-child(2){
+        margin-top: 80px;
+}
+#main h1:nth-child(3){
+        text-align: center;
+}
+#main h1:nth-child(4){
+        text-align: center;
+}
+img{
+    height: 300px;
+    top: 20%;
+    left: 50%;
+    position: absolute;
+}
+#img2{
+    rotate: 8deg;
+}
+#img3{
+    rotate: 15deg;
+}
+
+
+--------js--------
+
+var tl=gsap.timeline();
+tl.from("#navbar h3",{
+    delay:0.5,
+    y:-50,
+    opacity:0,
+    duration:1,
+    stagger:0.3
+})
+tl.from("#main h1",{
+    x:-500,
+    opacity:0,
+    stagger:0.5,
+    duration:2,
+})
+tl.from("img",{
+    x:100,
+    opacity:0,
+    rotate:45,
+    stagger:0.5,
+    duration:2,
+})

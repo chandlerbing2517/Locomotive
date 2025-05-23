@@ -4,63 +4,37 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#navbar h3{
-    color: #ffffff;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: medium;
-}
 html,body{
     height: 100%;
     width: 100%;
 }
-#main{
-    background-color: black;
-        height: 100%;
+#page1{
+    height: 100%;
     width: 100%;
-}
-#navbar{
+    background-color: aqua;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding:0 50px;
-    height: 50px
+    justify-content: center;
 }
-#navbar-pt2{
-    display: flex;
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+        display: flex;
     align-items: center;
-    gap: 25px;
+    justify-content: center;
 }
-h1{
-    color: #ffffff;
-    font-size: 100px;
-    text-transform: uppercase; 
-    font-weight: 100;
-    line-height: 80px;
-    margin-top: 20px;
-    width: 80%;
-    margin-left: 10%;
-    z-index: 9;
-    position: relative;
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 0, 183);
+        display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#main h1:nth-child(2){
-        margin-top: 80px;
-}
-#main h1:nth-child(3){
-        text-align: center;
-}
-#main h1:nth-child(4){
-        text-align: center;
-}
-img{
-    height: 300px;
-    top: 20%;
-    left: 50%;
-    position: absolute;
-}
-#img2{
-    rotate: 8deg;
-}
-#img3{
-    rotate: 15deg;
+#circle{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(rgb(221, 255, 0),rgb(0, 255, 30));
+    border-radius: 50%;
 }

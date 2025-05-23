@@ -1,21 +1,26 @@
-var tl=gsap.timeline();
-tl.from("#navbar h3",{
-    delay:0.5,
-    y:-50,
-    opacity:0,
-    duration:1,
-    stagger:0.3
+gsap.from("#page1 #circle",{
+scale:0,
+delay:1,
+duration:2,
+rotate:360
 })
-tl.from("#main h1",{
-    x:-500,
-    opacity:0,
-    stagger:0.5,
-    duration:2,
+gsap.from("#page2 #circle",{
+scale:0,
+delay:1,
+duration:2,
+rotate:360,
+scrollTrigger:{
+    trigger:"#page2 #circle",
+    scroller:"body",
+    markers:"true",
+    start:"top 60%",
+    end:"top 30%",
+    scrub:2
+}
 })
-tl.from("img",{
-    x:100,
-    opacity:0,
-    rotate:45,
-    stagger:0.5,
-    duration:2,
+gsap.from("#page3 #circle",{
+scale:0,
+delay:1,
+duration:2,
+rotate:360
 })
